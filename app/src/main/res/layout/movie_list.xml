@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="160dp"
+        android:layout_height="210dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/card_view"
+>
+    <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/the_last_2"
+            android:scaleType="fitXY"/>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_gravity="end"
+                  android:layout_margin="10dp">
+        <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_star"
+                app:tint="#fca311"/>
+        <TextView
+                android:id="@+id/tv_vote"
+                android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  tools:text="2.4"
+                  android:textStyle="bold"
+                  android:textSize="16sp"
+                  android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

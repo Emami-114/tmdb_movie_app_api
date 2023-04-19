@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search_shape"
+        android:layout_height="100dp"
+        android:id="@+id/item_root"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_search"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            app:shapeAppearance="@style/SearchImage"
+            android:layout_marginLeft="5dp"
+            tools:src="@drawable/the_last_2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Movie Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/iv_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="8dp"/>
+
+    <ImageView
+            android:id="@+id/vote_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_star"
+            app:tint="#fca311"
+            app:layout_constraintStart_toEndOf="@id/iv_search"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:layout_marginTop="10dp"
+
+    />
+    <TextView
+            android:id="@+id/tv_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2.4"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/vote_star"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:layout_marginTop="10dp"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
