@@ -1,3 +1,3 @@
 # tmdb_movie_app_api
 
-![movie_gift](https://user-images.githubusercontent.com/114245656/233119641-9e3a4032-48e4-4666-b6ad-9b2602a97073.gif)
+![Movie_gift](https://user-images.githubusercontent.com/114245656/233121179-a38ee77f-3575-42d5-ba53-60f6bc814e06.gif)
