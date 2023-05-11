@@ -1,6 +1,6 @@
 package com.example.tmdb_movie_app.api
 
-import com.example.tmdb_movie_app.api.Constance.API_KEY
+import com.example.tmdb_movie_app.BuildConfig.API_KEY
 import com.example.tmdb_movie_app.api.Constance.BASE_URL
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
